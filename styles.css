@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #15202B;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    text-align: center;
+    background-color: #0d141b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: #0077B5;
+}
+
+.social-media a img {
+    filter: invert(1); 
+    transition: filter 0.3s ease;
+}
+
+.social-media a:hover img {
+  filter: invert(7%) sepia(11%) saturate(3569%) hue-rotate(170deg) brightness(90%) contrast(87%);
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 20px;
+    }
+    .social-media a {
+        font-size: 18px;
+    }
+    .description {
+        font-size: 16px;
+    }
+}
